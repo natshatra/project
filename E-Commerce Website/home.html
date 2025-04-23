@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <title>E-Commerce Website</title>
+</head>
+
+<style>
+  .img-fluid {
+      transition: opacity 0.5s, transform 0.5s;
+  }
+
+  .img-fluid:hover {
+      opacity: 0.7;
+      transform: scale(1.1) translateZ(50px);
+  }
+</style>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg bg-primary" >
+        <div class="container-fluid">
+            
+          <a class="navbar-brand text-white" href="#">Fashion</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="./home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Signup</a>
+              </li>
+              <!-- modal signup -->
+              <li class="nav-item ">
+                <a class="nav-link active text-white" data-bs-toggle="mod   al" data-bs-target="#exampleModal2" href="#">Signin</a>
+                <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModal2Label" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-4 " id="exampleModal2Label">Signin</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                        <div class="modal-body">
+                          <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-md-11"> 
+                                    <form class="was-validated" >
+                          <div class="mb-3 form-group">
+                            <label class="form-label">Email address</label>
+                            <input type="email" class="form-control" required>
+                            <div class="valid-feedback">
+                                Valid 
+                            </div>
+                            <div class="invalid-feedback">
+                                Please fill out the field
+                            </div>
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+
+                    <!-- for password -->
+                     <div class="mb-3">
+                        <label class="form-label">Password</label>
+                        <input type="password" class="form-control" required>
+                        <div class="valid-feedback">
+                            Valid
+                        </div>
+                        <div class="invalid-feedback">
+                            Please fill out the field
+                        </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+<!-- modal footer -->
+<div class="modal-footer">
+  <button type="button" class="btn btn-primary">Save</button>
+  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+</div>
+  </li>
+  <!-- nav -->
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle active text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Category
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./men.html">MEN</a></li>
+                  <li><a class="dropdown-item" href="./womens.html">WOMEN</a></li>
+                  <!-- <li><hr class="dropdown-divider"></li> -->
+                  <li><a class="dropdown-item" href="./kids.html">KIDS</a></li>
+                  <li><a class="dropdown-item" href="./fancy_accessories.html">FANCY ACCESSORIES</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-disabled="true" href="./add_to_cart.html">Add to cart</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- heading -->
+
+      <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-5 text-center">
+            <h1 class="text-danger bg-gradient fs-1">LIFE  STYLE  SHOPPING </h1>
+            <h5 class="text-dark">Shope the latest fits and washes...</h5>
+        </div>
+        </div>
+      </div>
+      <br><br>
+
+      <!-- Carousel image -->
+
+      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="/WhatsApp Image 2025-02-12 at 6.57.14 AM.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Summer Sales..!!!</h5>
+              <p>Various collections</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./WhatsApp Image 2025-02-12 at 6.57.15 AM.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Special offer womens collection</h5>
+              <p>Buy 1 Get 1 free....</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./WhatsApp Image 2025-02-12 at 6.57.14 AM (1).jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Accessories are lowest price</h5>
+              <p>Men,Women and kids wear are collection....</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <br><br>
+
+      <!-- image tags -->
+
+    
+
+    <div class="container mt-5">
+      <div class="card p-4 shadow-lg border border-dark">
+      <div class="row justify-content-center mt-5">
+          <h1 class="text-center text-danger mb-5">TRENDS WE LOVE...</h1>
+          <div class="col-12 d-flex justify-content-center">
+              <img class="img-fluid w-100" src="./WhatsApp Image 2025-02-12 at 7.22.54 AM.jpeg" alt="...">
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- heading -->
+
+   <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-5 text-center">
+        <h2><strong>Deals of the day</strong></h2>
+      </div>
+    </div>
+   </div>
+  
+<!-- product -->
+    <div class="container">
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-4 text-center mr4">
+          <img class="img-fluid w-50 h-50 object-fit-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtGqax7M6k4VhxdwkMsFKvnqxM-DkBfmc2Vg&s" alt="">
+          <p>Kids wear fancy court and pant</p>
+          <h5 class="text-danger">-30% M.R.P.:₹2,000</h5>
+          <p class="text-danger">Inclusive of all taxes</p>
+          <button class="btn btn-info text-white me-2">Buy Now</button>
+          <button class="btn btn-danger text-dark">Add Cart</button>
+        </div>
+        
+        <div class="col-md-4 text-center mr4">
+          <img class="img-fluid w-75 h-75 object-fit-cover" src="https://diademstore.com/cdn/shop/collections/Kids_1024x1024.jpg?v=1718195826" alt="">
+          <p>Kids wear combo offer</p>
+          <h5 class="text-danger">-20% M.R.P.:₹6,000</h5>
+          <p class="text-danger">Inclusive of all taxes</p>
+          <button class="btn btn-info text-white me-2">Buy Now</button>
+          <button class="btn btn-danger text-dark">Add Cart</button>
+        </div>
+
+        <div class="col-md-4 text-center mr4">
+          <img class="img-fluid w-50 h-50 object-fit-cover" src="https://rukminim2.flixcart.com/image/850/1000/xif0q/dress/a/q/m/s-wine01-s-dh-sales-original-imagpcsgygjjhdne.jpeg?q=20&crop=false" alt="">
+          <p>Fancy kurti pink color</p>
+          <h5 class="text-danger">-40% M.R.P.:₹4,000</h5>
+          <p class="text-danger">Inclusive of all taxes</p>
+          <button class="btn btn-info text-white me-2">Buy Now</button>
+          <button class="btn btn-danger text-dark">Add Cart</button>
+        </div>
+      <!-- second row -->
+
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-4 text-center mr4">
+          <img class="img-fluid w-50 h-50 " src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToIoYkta2ILHEWtxDDS1rOYreZhpDQYpGNBjYj2CGC3RSpnkG_HiMgtu6aX1NviqKkaF4&usqp=CAU" alt="">
+          <p>Lengha traditional wear</p>
+          <h5 class="text-danger">-10% M.R.P.:₹7,000</h5>
+          <p class="text-danger">Inclusive of all taxes</p>
+          <button class="btn btn-info text-white me-2">Buy Now</button>
+          <button class="btn btn-danger text-dark">Add Cart</button>
+        </div>
+
+        <div class="col-md-4 text-center mr4">
+          <img class="img-fluid w-50 h-50" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnldAVEWrQQtoFdQzWfaGrXfk7ROy1lBjlNQ&s" alt="">
+          <p>Office wear jumpsuit</p>
+          <h5 class="text-danger">-30% M.R.P.:₹2,300</h5>
+          <p class="text-danger">Inclusive of all taxes</p>
+          <button class="btn btn-info text-white me-2">Buy Now</button>
+          <button class="btn btn-danger text-dark">Add Cart</button>
+        </div>
+
+        <div class="col-md-4 text-center mr4">
+          <img class="img-fluid w-50 h-50" src="https://i.pinimg.com/736x/be/d4/e7/bed4e7c8ae94c5970cbf676b1da92458.jpg" alt="">
+          <p>white grand lehanga </p>
+          <h5 class="text-danger">-30% M.R.P.:₹9,999</h5>
+          <p class="text-danger">Inclusive of all taxes</p>
+          <button class="btn btn-info text-white me-2">Buy Now</button>
+          <button class="btn btn-danger text-dark">Add Cart</button>
+        </div>
+
+        <!-- third row -->
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-4 text-center mr4">
+            <img class="img-fluid w-50 h-50 " src="https://i.pinimg.com/564x/4d/11/7f/4d117fde112e63cb5a80a93448ff258e.jpg" alt="">
+            <p>Blue shirt and gray pant</p>
+            <h5 class="text-danger">-10% M.R.P.:₹2,000</h5>
+            <p class="text-danger">Inclusive of all taxes</p>
+            <button class="btn btn-info text-white me-2">Buy Now</button>
+            <button class="btn btn-danger text-dark">Add Cart</button>
+          </div>
+
+          <div class="col-md-4 text-center mr4">
+            <img class="img-fluid w-50 h-50 " src="https://i.pinimg.com/236x/1e/da/fd/1edafd7ea2d786545b27163019e2f68d.jpg" alt="">
+            <p>Office wear blue shirt</p>
+            <h5 class="text-danger">-30% M.R.P.:₹2,000</h5>
+            <p class="text-danger">Inclusive of all taxes</p>
+            <button class="btn btn-info text-white me-2">Buy Now</button>
+            <button class="btn btn-danger text-dark">Add Cart</button>
+          </div>
+
+          <div class="col-md-4 text-center mr4">
+            <img class="img-fluid w-50 h-50 " src="https://i.pinimg.com/736x/bb/1a/f8/bb1af8fa6bd7b62e71b4cdaac9d30b04.jpg" alt="">
+            <p>White shirt and gray pant combo</p>
+            <h5 class="text-danger">-5% M.R.P.:₹8,500</h5>
+            <p class="text-danger">Inclusive of all taxes</p>
+            <button class="btn btn-info text-white me-2">Buy Now</button>
+            <button class="btn btn-danger text-dark">Add Cart</button>
+          </div>
+      </div>
+    </div> 
+    </div>
+    </div> 
+
+    <!-- footer -->
+
+    <footer class="bg-primary text-light text-center py-4 w-100">
+      <div class="container">
+          <div class="d-flex flex-column flex-md-row justify-content-center align-items-center mb-3">
+              <label for="email" class="me-2 mb-2 mb-md-0">Get deals:</label>
+              <input type="email" id="email" class="form-control w-50 w-md-25" placeholder="Enter your email address">
+              <button class="btn btn-danger text-white">Signup</button>
+          </div>
+          <p>Conditions of Use & Privacy Notice Interest-Based Ads © 1996-2025, Lifestyleshopping.com, Inc. or its affiliates</p>
+      </div>
+  </footer>
+
+  <!-- modal for sign in -->
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Signup</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Form starting -->
+
+        <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-md-11">
+                  <form class="was-validated">
+      
+      <!-- for first name -->
+                
+      <div class="mb-3 form-group">
+          <label class="form-label">First Name</label>
+              <input type="text" class="form-control" required>
+              <div id="text" class="form-text">Please enter your valid name</div>
+      </div>
+      <!-- For email id -->
+
+      <div class="mb-3 form-group">
+          <label class="form-label">Email address</label>
+          <input type="email" class="form-control" 
+              required>
+          <div class="valid-feedback">
+              Valid 
+          </div>
+          <div class="invalid-feedback">
+              Please fill out the field
+          </div>
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+
+      <!-- for address -->
+
+      <div class="mb-3 form-group">
+          <label class="form-label">Address</label>
+              <input type="text" class="form-control" required>
+      </div>
+
+       <!-- for password field -->
+       <div class="mb-3">
+          <label class="form-label">Password</label>
+          <input type="password" class="form-control" required>
+          <div class="valid-feedback">
+              Valid
+          </div>
+          <div class="invalid-feedback">
+              Please fill out the field
+          </div>
+      </div>
+
+      <!-- for re-enter password field -->
+      <div class="mb-3">
+          <label class="form-label">Re-Enter Password</label>
+          <input type="password" class="form-control" required>
+          <div class="valid-feedback">
+              Valid
+          </div>
+          <div class="invalid-feedback">
+              Please fill out the field
+          </div>
+      </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
